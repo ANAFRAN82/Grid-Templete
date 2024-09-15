@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+.content-grid{
+    display: grid;
+    grid-template-areas:
+    'logo      titulo  titulo   titulo      titulo    titulo'
+    'logo      titulo  titulo     titulo    titulo    titulo'
+    'menu      slide   carrucel  carrucel   carrucel  carru-info'
+    'menu      slide   carrucel  carrucel  carrucel  carru-info'
+    'menu      slide   carrucel  carrucel  carrucel  carru-info'
+    'menu      slide   imagen    video     video     video'
+    'menu      slide   imagen    video     video     video'
+    'menu      slide   imagen    video     video     video'
+    'derechos derechos derechos contacto   redes     redes'
+    'derechos derechos derechos contacto   redes     redes'
+    ;/* Cierre del template area*/
+    height: 670px;
+    gap: .2em;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.contenido:nth-child(1){
+    background: cornflowerblue;
+    grid-area: logo;
+    
+}
+.contenido:nth-child(2){
+    background: burlywood;
+    grid-area: titulo;
+    
+    
+}
+.contenido:nth-child(3){
+    background: palegreen;
+    grid-area: menu;
+    
+}
+.contenido:nth-child(4){
+    background: plum;
+    grid-area: slide;
+    
+}
+.contenido:nth-child(5){
+    background: paleturquoise;
+    grid-area: carrucel;
+   
+
+}
+.contenido:nth-child(6){
+    background: palegoldenrod;
+    grid-area: carru-info;
+    
+
+}
+.contenido:nth-child(7){
+    background: rgb(198, 130, 238);
+    grid-area: imagen;
+    
+}
+.contenido:nth-child(8){
+    background: cadetblue;
+    grid-area: video;
+    
+}
+.contenido:nth-child(9){
+    background: rgb(98, 230, 230);
+    grid-area: derechos;
+    
+}
+.contenido:nth-child(10){
+    background: rgb(181, 103, 103);
+    grid-area: contacto;
+}
+.contenido:nth-child(11){
+    background: rgb(206, 155, 118);
+   grid-area: redes;
+    
+}
